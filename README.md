@@ -57,7 +57,7 @@ sudo ./tsuite run
 
 切换到cgroup v1，在/etc/default/grub的GRUB_CMDLINE_LINUX添加`systemd.unified_cgroup_hierarchy=0`
 
-切换到cgroup v1，在/etc/default/grub的GRUB_CMDLINE_LINUX添加`systemd.unified_cgroup_hierarchy=1`
+切换到cgroup v2，在/etc/default/grub的GRUB_CMDLINE_LINUX添加`systemd.unified_cgroup_hierarchy=1`
 
 然后更新配置：
 
@@ -227,5 +227,6 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 - [[译\] Control Group v2（cgroupv2 权威指南）（KernelDoc, 2021）](https://arthurchiao.art/blog/cgroupv2-zh/#hugetlb-interface-files)
 - [第 3 章 子系统和可调参数 | Red Hat Product Documentation](https://docs.redhat.com/zh-cn/documentation/red_hat_enterprise_linux/6/html/resource_management_guide/ch-subsystems_and_tunable_parameters#ch-Subsystems_and_Tunable_Parameters)
 - [cgroup 子系统之 net_cls 和 net_prio | ggaaooppeenngg](https://ggaaooppeenngg.github.io/zh-CN/2017/05/19/cgroup-子系统之-net-cls-和-net-prio/)
+
 
 
